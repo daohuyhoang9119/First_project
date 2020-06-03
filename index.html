@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.scss">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header__left">
+                <p class="header__left-desc">医師の求人・転職・募集・常勤・非常勤（アルバイト）情報ならドクタービジョン</p>
+                <img src="./PC/header-logo.png" alt="" class="header__left-img">
+                <img src="./SP/header_sp.png" alt="" class="header__left-imgSP">
+                <ul class="header__list">
+                    <li class="header__list-item">
+                        <a href="#">ホーム</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="#">初めての方へ</a>
+                    </li>
+                    <li class="header__list-item">  
+                        <a href="#">常勤求人検索</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="#">非常勤求人検索</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="#">求人特集</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="#">医師キャリアアップラボ</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__right">
+                <img src="./PC/right-header-logo.png" alt="" class="header__right-img">
+                <a href="#" class="header__btn">
+                    <img src="./PC/right.png" alt="" class="header__btn-icon">
+                    <p class="header__btn-text">簡単60秒で新規登録</p>
+                </a>
+            </div>
+        </div>
+        <div class="slider-container">
+            <div class="slider">
+                <img src="./PC/slideshow1.png" alt="" class="slider__image-PC">
+                <img src="./SP/slideshow1-sp.png" alt="" class="slider__image-SP">
+                <a href="#" class="slider__btn">
+                    <p>多様なキャリアを見つける</p>
+                </a>
+            </div>
+            <div class="slider">
+                <img src="./PC/slideshow2.png" alt="" class="slider__image-PC">
+                <img src="./SP/slideshow2-sp.png" alt="" class="slider__image-SP">
+                <a href="#" class="slider__btn">
+                    <p>多様なキャリアを見つける</p>
+                </a>
+            </div>
+            <div class="slider">
+                <img src="./PC/slideshow3.png" alt="" class="slider__image-PC">
+                <img src="./SP/slideshow1-sp.png" alt="" class="slider__image-SP">
+                <a href="#" class="slider__btn">
+                    <p>多様なキャリアを見つける</p>
+                </a>
+            </div>
+            <div class="arrow arrow__left" onclick="plusSlides(-1)">&#10094;</div>
+            <div class="arrow arrow__right" onclick="plusSlides(1)">&#10095;</div>
+        </div>
+        <div class="center_container">
+            <div class="center_container-up">
+                <p>医師転職クイック検索</p>
+                <div class="center_container-wrap">
+                    <img src="./PC/search2.png" alt="" class="search2">
+                    <img src="./PC/x.png" alt="" class="x">
+                    <img src="./PC/search3.png" alt="" class="search3">
+                    <div class="center_checkbox">
+                        <div class="center_checkbox-1">
+                            <img src="./PC/logo.png" alt="">
+                            <p>常勤求人</p>
+                        </div>
+                        <div class="center_checkbox-2">
+                            <img src="./PC/logo.png" alt="">
+                            <p>常勤求人</p>
+                        </div>
+                    </div>    
+                    <img src="./PC/search.png" alt="" class="search"> 
+                </div>
+            </div>
+            <a href="" class="center_container-btn">
+                <p>
+                    <img src="./PC/down.png" alt=""> 詳細検索はこちら
+                </p>
+            </a>
+        </div>
+        <div class="center__container-sp1">
+            <div class="center__sp1-header">
+                <img src="./SP/text1.png" alt="" class="center__sp1-imgLeft">
+                <img src="./SP/text2.png" alt="" class="center__sp1-imgRight">
+            </div>
+            <div class="center__sp1-main">
+                <div class="center__sp1-up">
+                    <div class="center__sp1-item">
+                        <div class="center__sp1-left">
+                            <img src="./SP/logo7.png" alt="">
+                            <p class="center__sp1-text1">診療科目</p>
+                            <p class="center__sp1-text2">を選ぶ</p>
+                        </div>
+                        <img src="./PC/plus.png" alt="" class="center__sp1-right">
+                    </div>
+                    <div class="center__sp1-item">
+                        <div class="center__sp1-left">
+                            <img src="./SP/logo8.png" alt="">
+                            <p class="center__sp1-text1">施設形態</p>
+                            <p class="center__sp1-text2">を選ぶ</p>
+                        </div>
+                        <img src="./PC/plus.png" alt="" class="center__sp1-right">
+                    </div>
+                </div>
+                <a href="#" class="center__sp1-btn">
+                    <img src="./PC/search5.png" alt="">
+                    <p>この条件で検索</p>
+                </a>
+            </div>
+        </div>
+        <div class="center__container-sp2">
+            <img src="./SP/title1.png" alt="" class="center__sp2-title">
+            <div class="center__sp2-item">
+                <div class="sp2__item-title">
+                    <img src="./SP/logo5.png" alt="">
+                    <p>【東京都／2,000万円検討可】内科 療養病棟管理<br> 週4日・当直なし検討 150床規模都内病院</p>
+                </div>
+                <div class="sp2__item-main">
+                    <div class="item__main-title">
+                        <div class="item__main-left">
+                            <img src="./SP/logo1.png" alt="">
+                            <p>東京都 板橋区</p>
+                        </div>
+                        <img src="./SP/logo4.png" alt="" class="item__main-right">
+                    </div>
+                    <p class="item__main-text">
+                        <b>給与</b>　　　 ：年収1,800～2,000万円(週5日)
+                    </p>
+                    <p class="item__main-text">
+                        <b>病医院種別</b> ：リハビリ
+                    </p>
+                    <p class="item__main-text">
+                        <b>診療科目	</b> ：一般内科
+                    </p>
+                </div>
+            </div>
+            <div class="center__sp2-item">
+                <div class="sp2__item-title">
+                    <img src="./SP/logo5.png" alt="">
+                    <p>【東京都／2,000万円検討可】内科 療養病棟管理<br> 週4日・当直なし検討 150床規模都内病院</p>
+                </div>
+                <div class="sp2__item-main">
+                    <div class="item__main-title">
+                        <div class="item__main-left">
+                            <img src="./SP/logo1.png" alt="">
+                            <p>東京都 板橋区</p>
+                        </div>
+                        <img src="./SP/logo4.png" alt="" class="item__main-right">
+                    </div>
+                    <p class="item__main-text">
+                        <b>給与</b>　　　 ：年収1,800～2,000万円(週5日)
+                    </p>
+                    <p class="item__main-text">
+                        <b>病医院種別</b> ：リハビリ
+                    </p>
+                    <p class="item__main-text">
+                        <b>診療科目	</b> ：一般内科
+                    </p>
+                </div>
+            </div>
+            <div class="center__sp2-item">
+                <div class="sp2__item-title">
+                    <img src="./SP/logo5.png" alt="">
+                    <p>【東京都／2,000万円検討可】内科 療養病棟管理<br> 週4日・当直なし検討 150床規模都内病院</p>
+                </div>
+                <div class="sp2__item-main">
+                    <div class="item__main-title">
+                        <div class="item__main-left">
+                            <img src="./SP/logo1.png" alt="">
+                            <p>東京都 板橋区</p>
+                        </div>
+                        <img src="./SP/logo4.png" alt="" class="item__main-right">
+                    </div>
+                    <p class="item__main-text">
+                        <b>給与</b>　　　 ：年収1,800～2,000万円(週5日)
+                    </p>
+                    <p class="item__main-text">
+                        <b>病医院種別</b> ：リハビリ
+                    </p>
+                    <p class="item__main-text">
+                        <b>診療科目	</b> ：一般内科
+                    </p>
+                </div>
+            </div>
+            <a href="#" class="center__sp2-btn">
+                <p>先生へのおすすめ求人案件をもっと見る</p>
+                <img src="./SP/logo3.png" alt="">
+            </a>
+        </div>
+        <div class="component">
+            <div class="left">
+                <div class="left_container-first">
+                    <div class="main_container">
+                        <div class="title">
+                            <img src="./PC/title.png" alt="">
+                        </div>
+                        <div class="main-wrap">
+                            <div class="left_container">
+                                <div class="left_container-1">
+                                    <img src="./PC/big-images-container.png" alt="" class="img__pc">
+                                    <img src="./SP/big-images-container-sp.png" alt="" class="img__sp">
+                                    <p>常勤｜東京の「クリニック」特集</p>
+                                </div>
+                                <div class="left_container-wrap">
+                                    <div class="left_container-2">
+                                        <img src="./PC/small-images-container5.png" alt="" class="img__pc">
+                                        <img src="./SP/small-images-container5-sp.png" alt="" class="img__sp">
+                                        <p>女性医師向け転職特集</p>
+                                    </div>
+                                    <div class="left_container-3">
+                                        <img src="./PC/small-images-container4.png" alt="" class="img__pc">
+                                        <img src="./SP/small-images-container4-sp.png" alt="" class="img__sp">
+                                        <p>クリニック医師求人特集</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right_container">
+                                <div class="right_container-1">
+                                    <img src="./PC/small-images-container1.png" alt="" class="img__pc">
+                                    <img src="./SP/small-images-container1-sp.png" alt="" class="img__sp">
+                                    <p>製薬企業への医師転職特集</p>
+                                </div>
+                                <div class="right_container-2">
+                                    <img src="./PC/small-images-container2.png" alt="" class="img__pc">
+                                    <img src="./SP/small-images-container2-sp.png" alt="" class="img__sp">
+                                    <p>産業医への医師転職特集<</p>
+                                </div>
+                                <div class="right_container-3">
+                                    <img src="./PC/small-images-container3.png" alt="" class="img__pc">
+                                    <img src="./SP/small-images-container3-sp.png" alt="" class="img__sp">
+                                    <p>高額年収の医師求人特集</p>
+                                </div>
+                                <div class="right_container-4">
+                                    <img src="./PC/small-images-container4.png" alt="" class="img__pc">
+                                    <img src="./SP/small-images-container4-sp.png" alt="" class="img__sp">
+                                    <p>高額年収の医師求人特集</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="left_info">
+                    <div class="left_info-left">
+                        <p>医師求人コラム</p>
+                    </div>
+                    <p class="left_info-right">
+                        医師求人コラムを見る
+                        <img src="./PC/right-gray.png" alt="">
+                    </p>
+                </div>
+                <div class="left_container-second">
+                    <div class="doctor_info-1">
+                        <img src="./PC/smaller-images-container1.png" alt="">
+                        <div class="container">
+                            <div class="left_side">
+                                <p class="text-1">2017.05.25 UPDATE</p>
+                                <p class="text-2">
+                                    女性医師のキャリア
+                                    <br> と働き方
+                                </p>
+                            </div>
+                            <div class="right_side">
+                                <img src="./PC/round-image1.png" alt="">
+                                <p class="text-3">
+                                    チーフコンサルタント
+                                    <br> 中村翔子
+                                </p>
+                            </div>
+                        </div>
+                        <a href="#" class="btn">
+                            <img src="./PC/small-button-red.png" alt="">
+                        </a>
+                    </div>
+                    <div class="doctor_info-1">
+                        <img src="./PC/smaller-images-container2.png" alt="">
+                        <div class="container">
+                            <div class="left_side">
+                                <p class="text-1">2017.05.25 UPDATE</p>
+                                <p class="text-2">
+                                    女性医師のキャリア
+                                    <br> と働き方
+                                </p>
+                            </div>
+                            <div class="right_side">
+                                <img src="./PC/round-image2.png" alt="">
+                                <p class="text-3">
+                                    チーフコンサルタント
+                                    <br> 中村翔子
+                                </p>
+                            </div>
+                        </div>
+                        <a href="#" class="btn">
+                            <img src="./PC/small-button-blue.png" alt="">
+                        </a>
+                    </div>
+                    <div class="doctor_info-1">
+                        <img src="./PC/smaller-images-container3.png" alt="">
+                        <div class="container">
+                            <div class="left_side">
+                                <p class="text-1">2017.05.25 UPDATE</p>
+                                <p class="text-2">
+                                    女性医師のキャリア
+                                    <br> と働き方
+                                </p>
+                            </div>
+                            <div class="right_side">
+                                <img src="./PC/round-image3.png" alt="">
+                                <p class="text-3">
+                                    チーフコンサルタント
+                                    <br> 中村翔子
+                                </p>
+                            </div>
+                        </div>
+                        <a href="#" class="btn">
+                            <img src="./PC/small-button-red.png" alt="">
+                        </a>
+                    </div>
+                    <div class="arrow2 arrow2__left" onclick="plusSlides(-1)">&#10094;</div>
+                    <div class="arrow2 arrow2__right" onclick="plusSlides(1)">&#10095;</div>
+                </div>
+                <div class="left_info left-info2">
+                    <div class="left_info-left">
+                        <p>都道府県別の医師転職・求人情報</p>
+                    </div>
+                    <p class="left_info-right">
+                        医師求人コラムを見る
+                        <img src="./PC/right-gray.png" alt="">
+                    </p>
+                </div>
+                <div class="component__sp1">
+                    <p class="component__sp1-title">北海道・東北</p>
+                    <div class="component__sp1-item">
+                        <p>北海道</p>
+                        <img src="./SP/logo6.png" alt="">
+                    </div>
+                    <div class="component__sp1-item">
+                        <p>北海道</p>
+                        <img src="./SP/logo6.png" alt="">
+                    </div>
+                    <div class="component__sp1-item">
+                        <p>北海道</p>
+                        <img src="./SP/logo6.png" alt="">
+                    </div>
+                    <div class="component__sp1-item">
+                        <p>北海道</p>
+                        <img src="./SP/logo6.png" alt="">
+                    </div>
+                    <div class="component__sp1-item">
+                        <p>北海道</p>
+                        <img src="./SP/logo6.png" alt="">
+                    </div>
+                    <div class="component__sp1-item">
+                        <p>北海道</p>
+                        <img src="./SP/logo6.png" alt="">
+                    </div>
+                    <div class="component__sp1-item">
+                        <p>北海道</p>
+                        <img src="./SP/logo6.png" alt="">
+                    </div>
+                </div>
+                <div class="component__sp1">    
+                    <p class="component__sp1-title">関東</p>
+                    <div class="component__sp1-item">
+                        <p>北海道</p>
+                        <img src="./SP/logo6.png" alt="">
+                    </div>
+                    <div class="component__sp1-item">
+                        <p>北海道</p>
+                        <img src="./SP/logo6.png" alt="">
+                    </div>
+                    <div class="component__sp1-item">
+                        <p>北海道</p>
+                        <img src="./SP/logo6.png" alt="">
+                    </div>
+                    <div class="component__sp1-item">
+                        <p>北海道</p>
+                        <img src="./SP/logo6.png" alt="">
+                    </div>
+                    <div class="component__sp1-item">
+                        <p>北海道</p>
+                        <img src="./SP/logo6.png" alt="">
+                    </div>
+                    <div class="component__sp1-item">
+                        <p>北海道</p>
+                        <img src="./SP/logo6.png" alt="">
+                    </div>
+                    <div class="component__sp1-item">
+                        <p>北海道</p>
+                        <img src="./SP/logo6.png" alt="">
+                    </div>
+                </div>
+                <div class="left_info left-info3">
+                    <div class="left_info-left">
+                        <p>“曜日別”常勤求人検索</p>
+                    </div>
+                    <p class="left_info-right">
+                        医師求人コラムを見る
+                        <img src="./PC/right-gray.png" alt="">
+                    </p>
+                </div>
+                <div class="component_table">
+                    <p class="component_table-title">ご希望の勤務曜日から求人検索が可能です。</p>
+                    <div class="component_table-container">
+                        <div class="component_table-left">
+                            <p>
+                                東京都
+                                <br>
+                                <br> 神奈川
+                                <br>
+                                <br> 千葉県
+                                <br>
+                                <br> 埼玉県
+                                <br>
+                            </p>
+                        </div>
+                        <div class="component_table-right">
+                            <p>｜ 月 ｜ 火 ｜ 水 ｜ 木 ｜ 金 ｜ 土 ｜ 日 ｜ </p>
+                            <br>
+                            <p>｜ 月 ｜ 火 ｜ 水 ｜ 木 ｜ 金 ｜ 土 ｜ 日 ｜ </p>
+                            <br>
+                            <p>｜ 月 ｜ 火 ｜ 水 ｜ 木 ｜ 金 ｜ 土 ｜ 日 ｜ </p>
+                            <br>
+                            <p>｜ 月 ｜ 火 ｜ 水 ｜ 木 ｜ 金 ｜ 土 ｜ 日 ｜ </p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="container_fiveSP">
+                    <img src="./PC/title1.png" alt="" class="container_fiveSP-title">
+                    <div class="container_fiveSP-btn">
+                        <a href="#" class="btn-black">ドクタービジョンについてもっと詳しく知る</a>
+                        <a href="#" class="btn-red">コンサルタントに相談する</a>
+                    </div>
+                </div>
+                <div class="left_container-third">
+                    <div class="first">
+                        <p>医師求人情報を探す</p>
+                    </div>
+                    <div class="second">
+                        <p>2017/05/31更新</p>
+                    </div>
+                    <div class="third">
+                        <p class="normal">現在 公開求人数</p>
+                        <p class="special">5502</p>
+                        <p class="normal">件</p>
+                    </div>
+                </div>
+                <div class="left_container-four">
+                    <div class="info">
+                        <div class="left-info">
+                            <p class="t1">常勤</p>
+                            <p>（週4日以上）求人を探す</p>
+                        </div>
+                        <div class="right-info">
+                            <p class="t1">週3日以内</p>
+                            <p>求人を探す</p>
+                        </div>
+                    </div>
+                    <div class="wrap">
+                        <div class="main_four">
+                            <div class="main_four-left">
+                                <img src="./PC/maps.png" alt="">
+                            </div>
+                            <div class="main_four-right">
+                                <div class="right-item">
+                                    <div class="right-item1">
+                                        <p class="item1">診療科目</p>
+                                        <p class="item2">を選ぶ</p>
+                                        <p class="item3">選択した条件： --</p>
+                                    </div>
+                                    <div class="right-item2">
+                                        <img src="./PC/plus.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="right-item">
+                                    <div class="right-item1">
+                                        <p class="item1">診療科目</p>
+                                        <p class="item2">を選ぶ</p>
+                                        <p class="item3">選択した条件： --</p>
+                                    </div>
+                                    <div class="right-item2">
+                                        <img src="./PC/plus.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="right-item">
+                                    <div class="right-item1">
+                                        <p class="item1">診療科目</p>
+                                        <p class="item2">を選ぶ</p>
+                                        <p class="item3">選択した条件： --</p>
+                                    </div>
+                                    <div class="right-item2">
+                                        <img src="./PC/plus.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="" class="btn-normal">
+                            <p>さらに条件を追加する</p>
+                            <img src="./PC/pluswhite.png" alt="">
+                        </a>
+                        <a href="" class="btn-red">
+                            <img src="./PC/search5.png" alt="">
+                            <p>この条件で検索</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="left_container-five">
+                    <img src="./PC/title1.png" alt="">
+                    <div class="center-five">
+                        <div class="left-center">
+                            <p class="blueText">ドクタービジョンの3つの安心</p>
+                            <p class="blackText">職業紹介優良事業者認定とプライバシーマークも取得し、個人情報管理も徹底。また直接顔を合わせて「会う」「話す」ことで求職者のニーズや適性を正確に理解し、一人ひとりにとって最適な転職活動となるよう心を込めた対面型の人材サービスをご提供いたします。</p>
+                        </div>
+                        <div class="right-center">
+                            <img src="./PC/images1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="center_btn">
+                        <a href="#" class="center_btn-black">
+                            <p>ドクタービジョンについてもっと詳しく知る</p>
+                        </a>
+                        <a href="#" class="center_btn-red">
+                            <p>コンサルタントに相談する </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="left_container-six">
+                    <div class="item1">
+                        <p class="item1_left">先生へのおすすめ案件</p>
+                        <div class="item1_right">
+                            <p>先生へのおすすめ案件を見る</p>
+                            <img src="./PC/right-gray.png" alt="">
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="info_text">
+                            <p class="title">【東京都／2,000万円検討可】内科 療養病棟管理 週4日・当直なし検討 150床規模都内病院</p>
+                            <div class="info_text1">
+                                <p class="info_text1-1">所在地       ：  東京都板橋区</p>
+                                <p class="info_text1-2">給与     : 年収1,800～2,000万円(週5日)</br></p>
+                            </div>
+                            <div class="info_text2">
+                                <p class="info_text2-1">病医院種別 :  リハビリ</p>
+                                <p class="info_text2-2">診療科目：一般内科</p>
+                            </div>
+                        </div>
+                        <img src="./PC/right-gray.png" alt="" class="info_arrow">
+                    </div>
+                    <div class="info">
+                        <div class="info_text">
+                            <p class="title">【東京都／2,000万円検討可】内科 療養病棟管理 週4日・当直なし検討 150床規模都内病院</p>
+                            <div class="info_text1">
+                                <p class="info_text1-1">所在地       ：  東京都板橋区</p>
+                                <p class="info_text1-2">給与     : 年収1,800～2,000万円(週5日)</br></p>
+                            </div>
+                            <div class="info_text2">
+                                <p class="info_text2-1">病医院種別 :  リハビリ</p>
+                                <p class="info_text2-2">診療科目：一般内科</p>
+                            </div>
+                        </div>
+                        <img src="./PC/right-gray.png" alt="" class="info_arrow">
+                    </div>
+                    <div class="info">
+                        <div class="info_text">
+                            <p class="title">【東京都／2,000万円検討可】内科 療養病棟管理 週4日・当直なし検討 150床規模都内病院</p>
+                            <div class="info_text1">
+                                <p class="info_text1-1">所在地       ：  東京都板橋区</p>
+                                <p class="info_text1-2">給与     : 年収1,800～2,000万円(週5日)</br></p>
+                            </div>
+                            <div class="info_text2">
+                                <p class="info_text2-1">病医院種別 :  リハビリ</p>
+                                <p class="info_text2-2">診療科目：一般内科</p>
+                            </div>
+                        </div>
+                        <img src="./PC/right-gray.png" alt="" class="info_arrow">
+                    </div>
+                    <div class="item1 item2">
+                        <p class="item1_left">新着求人案件</p>
+                        <div class="item1_right">
+                            <p>新着求人案件を見る</p>
+                            <img src="./PC/right-gray.png" alt="">
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="info_text">
+                            <p class="title">【東京都／2,000万円検討可】内科 療養病棟管理 週4日・当直なし検討 150床規模都内病院</p>
+                            <div class="info_text1">
+                                <p class="info_text1-1">所在地       ：  東京都板橋区</p>
+                                <p class="info_text1-2">給与     : 年収1,800～2,000万円(週5日)</br></p>
+                            </div>
+                            <div class="info_text2">
+                                <p class="info_text2-1">病医院種別 :  リハビリ</p>
+                                <p class="info_text2-2">診療科目：一般内科</p>
+                            </div>
+                        </div>
+                        <img src="./PC/right-gray.png" alt="" class="info_arrow">
+                    </div>
+                    <div class="info">
+                        <div class="info_text">
+                            <p class="title">【東京都／2,000万円検討可】内科 療養病棟管理 週4日・当直なし検討 150床規模都内病院</p>
+                            <div class="info_text1">
+                                <p class="info_text1-1">所在地       ：  東京都板橋区</p>
+                                <p class="info_text1-2">給与     : 年収1,800～2,000万円(週5日)</br></p>
+                            </div>
+                            <div class="info_text2">
+                                <p class="info_text2-1">病医院種別 :  リハビリ</p>
+                                <p class="info_text2-2">診療科目：一般内科</p>
+                            </div>
+                        </div>
+                        <img src="./PC/right-gray.png" alt="" class="info_arrow">
+                    </div>
+                    <div class="info">
+                        <div class="info_text">
+                            <p class="title">【東京都／2,000万円検討可】内科 療養病棟管理 週4日・当直なし検討 150床規模都内病院</p>
+                            <div class="info_text1">
+                                <p class="info_text1-1">所在地       ：  東京都板橋区</p>
+                                <p class="info_text1-2">給与     : 年収1,800～2,000万円(週5日)</br></p>
+                            </div>
+                            <div class="info_text2">
+                                <p class="info_text2-1">病医院種別 :  リハビリ</p>
+                                <p class="info_text2-2">診療科目：一般内科</p>
+                            </div>
+                        </div>
+                        <img src="./PC/right-gray.png" alt="" class="info_arrow">
+                    </div>
+                    <div class="final">
+                        <p>“曜日別”非常勤求人検索（SEO用パーツ）</p>
+                    </div>
+                    <div class="table">
+                        <p class="table_title">ご希望の勤務曜日から求人検索が可能です。</p>
+                        <div class="table_container">
+                            <div class="table_left">
+                                <p>
+                                    東京都
+                                    <br>
+                                    <br> 神奈川
+                                    <br>
+                                    <br> 千葉県
+                                    <br>
+                                    <br> 埼玉県
+                                    <br>
+                                </p>
+                            </div>
+                            <div class="table_right">
+                                <p>｜ 月 ｜ 火 ｜ 水 ｜ 木 ｜ 金 ｜ 土 ｜ 日 ｜ </p>
+                                <br>
+                                <p>｜ 月 ｜ 火 ｜ 水 ｜ 木 ｜ 金 ｜ 土 ｜ 日 ｜ </p>
+                                <br>
+                                <p>｜ 月 ｜ 火 ｜ 水 ｜ 木 ｜ 金 ｜ 土 ｜ 日 ｜ </p>
+                                <br>
+                                <p>｜ 月 ｜ 火 ｜ 水 ｜ 木 ｜ 金 ｜ 土 ｜ 日 ｜ </p>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="left_container-seven">
+                    <div class="container_seven-question">
+                        <p>求人掲載</p>
+                    </div>
+                    <p class="container_seven-text">医療機関の皆様へ　求人掲載のお問合わせはこちら</p>
+                </div>
+                <div class="left_container-seven left_container-eight">
+                    <div class="container_seven-question">
+                        <p>退職・閉院</p>
+                    </div>
+                    <p class="container_seven-text">退職・閉院のご相談　ご相談・お問合わせはこちら</p>
+                </div>
+                <div class="left_container-seven left_container-nine">
+                    <div class="container_seven-question">
+                        <p>スマートフォンアプリ</p>
+                    </div>
+                    <p class="container_seven-text">ドクタービジョンおすすめ　スマートフォン向けアプリ</p>
+                </div>
+                <div class="left_container-seven left_container-ten">
+                    <div class="container_seven-question">
+                        <p>年収・給与実態</p>
+                    </div>
+                    <p class="container_seven-text">転職をお考えになる際に　医師の年収・給与実態について</p>
+                </div>
+            </div>
+            <div class="right">
+                <div class="right_container-first">
+                    <img src="./PC/title-right1.png" alt="" class="title">
+                    <a href="#" class="btn1">
+                        <img src="./PC/red-right.png" alt="">
+                        <p>常勤のご登録</p>
+                    </a>
+                    <a href="#" class="btn2">
+                        <img src="./PC/red-right.png" alt="">
+                        <p>非常勤のご登録</p>
+                    </a>
+                </div>
+                <div class="right_container-second">
+                    <div class="second_item">
+                        <img src="./PC/logo4.png" alt="" class="left">
+                        <p class="right">株式会社メディカルリソースは厚生労働省認可職業紹介優良事業者認定企業です。</p>
+                    </div>
+                    <div class="second_item">
+                        <img src="./PC/logo5.png" alt="" class="left">
+                        <p class="right">株式会社メディカルリソースは、お客様の個人情報を適切に管理し、目的に沿って正しく利用します。 </p>
+                    </div>
+                    <div class="second_item second_item-three">
+                        <img src="./PC/logo6.png" alt="" class="left">
+                        <p class="right">直接顔を合わせて「会う」「話す」ことで求職者のニーズや適性を正確に理解し、一人ひとりにとって最適な転職活動となるよう心を込めた対面型の人材サービスを提供いたします。 </p>
+                    </div>
+                </div>
+                <div class="right_container-third">
+                    <div class="title">
+                        <img src="./PC/logo3.png" alt="">
+                        <p>医師求人特集一覧</p>
+                    </div>
+                    <div class="third_item">
+                        <div class="item_image">
+                            <img src="./PC/images2.png" alt="">
+                        </div>
+                        <div class="item_content">
+                            <p class="item_content-title">特集タイトル</p>
+                            <p class="item_content-desc">医師の皆様に人気エリアの「クリニック」求人をご紹介します。</p>
+                        </div>
+                    </div>
+                    <div class="third_item">
+                        <div class="item_image">
+                            <img src="./PC/images3.png" alt="">
+                        </div>
+                        <div class="item_content">
+                            <p class="item_content-title">特集タイトル</p>
+                            <p class="item_content-desc">医師の皆様に人気エリアの「クリニック」求人をご紹介します。</p>
+                        </div>
+                    </div>
+                    <div class="third_item">
+                        <div class="item_image">
+                            <img src="./PC/images4.png" alt="">
+                        </div>
+                        <div class="item_content">
+                            <p class="item_content-title">特集タイトル</p>
+                            <p class="item_content-desc">医師の皆様に人気エリアの「クリニック」求人をご紹介します。</p>
+                        </div>
+                    </div>
+                    <a href="#" class="btn-third">
+                        <p>医師求人特集一覧をみる</p>
+                        <img src="./PC/right.png" alt="">
+                    </a>
+                </div>
+                <div class="right_container-four">
+                    <div class="container_question">
+                        <p>Q&A</p>
+                    </div>
+                    <p>よくあるご質問</p>
+                </div>
+                <div class="right_container-five">
+                    <div class="wrap_five">
+                        <div class="title_five">
+                            <img src="./PC/logo3.png" alt="">
+                            <p>INFORMATION</p>  
+                        </div>
+                        <div class="date_five">
+                            <p class="date_five-title">2017.06.01</p>
+                            <div class="date_five-content">知人・友人ご紹介プログラムのご案内</div>
+                        </div>
+                        <div class="main-five">
+                            <p>
+                                ドクタービジョンを運営するメディカルリソースでは、知人・友人ご紹介プログラムを実施しています。「お仕事を探している」「転職を考えている」先生のご友人やご同僚（先輩・同期・後輩）、ご家族をご紹介いただくと、本登録完了後、ご紹介者とご友人・ご家族やご同僚のそれぞれに『QUOカード10,000円分』を進呈いたします。
+                                <br>
+                                <br>
+                            </p>
+                        </div>
+                        <div class="date_five">
+                            <p class="date_five-title">2016.08.26</p>
+                            <div class="date_five-content"> 薬剤師独立開業支援にて日本M&A センター社と業務協力を開始</div>
+                        </div>
+                        <div class="date_five">
+                            <p class="date_five-title">2015.04.01</p>
+                            <div class="date_five-content">在宅・訪問診療求人特集をリリースいたしました</div>
+                        </div>
+                        <div class="date_five">
+                            <p class="date_five-title">2015.03.12</p>
+                            <div class="date_five-content">【厚生労働省委託事業】職業紹介優良事業者認定を取得しました。</div>
+                        </div>
+                        <a href="#" class="btn-five">
+                            <p>医師求人特集一覧をみる</p>
+                            <img src="./PC/right.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="right_container-six">
+                    <div class="wrap">
+                        <img src="./PC/images5.png" alt="">
+                    </div>
+                    <p>クリニック開業支援・開業物件ご紹介</p>
+                </div>
+                <div class="right_container-four right_container-seven">
+                    <div class="container_question">
+                        <p>求人掲載</p>
+                    </div>
+                    <p>医療機関の皆様へ　求人掲載のお問合わせはこちら</p>
+                </div>
+                <div class="right_container-four right_container-eight">
+                    <div class="container_question">
+                        <p>退職・閉院</p>
+                    </div>
+                    <p>退職・閉院のご相談　ご相談・お問合わせはこちら</p>
+                </div>
+                <div class="right_container-four right_container-nine">
+                    <div class="container_question">
+                        <p>スマートフォンアプリ</p>
+                    </div>
+                    <p>ドクタービジョンおすすめ　スマートフォン向けアプリ</p>
+                </div>
+                <div class="right_container-four right_container-ten">
+                    <div class="container_question">
+                        <p>年収・給与実態</p>
+                    </div>
+                    <p>転職をお考えになる際に　医師の年収・給与実態について</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer_title">
+                <img src="./PC/logo3.png" alt="">
+                <p>医師の求人・転職サイト　ドクタービジョンとは？</p>
+            </div>
+            <p class="footer_content">
+                ドクタービジョンは、医師の皆様の常勤の転職サポートから非常勤（アルバイト）での求人紹介を行う求人情報サイトです。日々更新されているお仕事情報の他、求人検索機能としては、常勤・非常勤（アルバイト）の雇用形態や全国の都道府県はもちろん、一般内科・精神科・在宅・訪問診療などの診療科目や、各種役職（院長、副院長、医員）、病床数などからも絞込みが可能であり、病医院種別についても一般病院やクリニック、リハビリ施設、療養、
+                <br>精神、老健などについてご提供しています。 また、ドクタービジョンの医師のコンシェルジュサービスでは、既に働きたい病院をいくつか思い描いていらっしゃる先生方には、その施設を逆指名していただくことによって、まだ表には出ていない求人をご紹介することも可能
+                <br> です。
+                <br>他にも、医師の皆様や、医療関係者、病院やクリニックにお勤めの皆様にお勧めのiPhoneやiPad・iPad2、Androidなどのスマートフォンアプリ紹介コンテンツや、医療に関わる動画ニュース等をご紹介しています。
+                <br> おかげさまでドクタービジョンご利用の先生方には「病院および医局内の情報を豊富に持っている情報通な会社として信頼できる」とのご評判をいただいており、多くの医師の皆様にご利用いただいております。
+                <br> 簡単便利な検索キーワードは、【ドクタービジョン】。 運営会社は、東証1部上場 日本調剤グループの株式会社メディカルリソースです。
+                <br>
+            </p>
+            <div class="site_map">
+                <img src="./PC/logo3.png" alt="">
+                <p>SITE MAP</p>
+            </div>
+            <div class="site_desc">
+                <p class="site_desc-left">
+                    サイトメニュー
+                    <br> 医師求人特集
+                    <br> 医師キャリアアップラボ
+                    <br>
+                </p>
+                <p class="site_desc-right">
+                    常勤求人検索　/　非常勤求人検索　/　初めての方へ　/　よくあるご質問　/　コンサルタントに相談　簡単60秒で新規登録 
+                    <br>
+                    特集タイトル１　/　特集タイトル2　/　特集タイトル3　/　特集タイトル4　/　特集タイトル5　/　特集タイトル6　/　特集タイトル7
+                    <br>
+                    コラムカテゴリタイトル1　/　コラムカテゴリタイトル2　/　コラムカテゴリタイトル3　/　コラムカテゴリタイトル4　/　コラムカテゴリタイトル5
+                    <br>
+                </p>
+            </div>
+            <div class="site_family">
+                <img src="./PC/logo3.png" alt="">
+                <p>FAMILY SITE</p>
+            </div>
+            <div class="family_desc">
+                <p class="family_desc-left">関連サイト</p>
+                <p class="family_desc-right">ファルマスタッフ　/　ROOKIE’S　/　探しっくす　/　株式会社メディカルリソース</p>
+            </div>
+            <div class="last">
+                <img src="./PC/last-btn.png" alt="" class="last_logo">
+                <p class="last_content-1">
+                    当サイトは、お客様のプライバシー保護のため、個人情報
+                    <br> 入力ページにおいてSSL暗号化通信を採用しています。
+                </p>
+                <p class="last_content-2">
+                    厚生労働大臣許可13-ユ-010743
+                    <br> © 2009-2017 MEDICAL RESOURCES Co., Ltd. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="app.js"></script>
+</html>
